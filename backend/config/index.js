@@ -1,0 +1,9 @@
+const dotenv = require('dotenv').config();
+
+const PORT = process.env.PORT 
+const MONGODB_CONNECTION_STRING = process.env.MONGODB_CONNECTION_STRING 
+const  SIGN_ACESS_TOKEN  = process.env.SIGN_ACESS_TOKEN
+const SIGN_REFRESH_TOKEN = process.env.SIGN_REFRESH_TOKEN
+const BACKEND_SERVER_PATH = process.env.BACKEND_SERVER_PATH
+
+module.exports = {PORT, MONGODB_CONNECTION_STRING,SIGN_REFRESH_TOKEN, SIGN_ACESS_TOKEN,BACKEND_SERVER_PATH}
