@@ -1,0 +1,25 @@
+.container{
+    margin: 20px;
+}
+.layout{
+    display: flex;
+    flex-direction: column;
+    height:93vh ;
+}
+.main{
+    flex: 1;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+
+@media screen and (max-width: 640px) {
+    .main{
+        width: 624px;
+    }
+}

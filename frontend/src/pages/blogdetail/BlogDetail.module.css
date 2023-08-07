@@ -1,0 +1,212 @@
+.abcd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
+.wraper{
+    display: flex;
+padding: 10px;
+gap: 2px
+}
+.right{
+/* border: 1px solid red; */
+padding: 8px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 60%
+}
+.right img{
+    width: 322px;
+    height: 323px;
+border: 1px solid;
+border-radius: 10px;
+margin-top: 9px;
+}
+.title{
+text-align: center;
+}
+.date{
+text-align: center;
+font-size: 10px;
+}
+.author{
+    text-align: center;
+    font-size: 11px;
+}
+
+.content{
+    text-align: justify;
+    margin-top:  5px;
+    /* max-height: 500px; */
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+.left{
+/* border: 1px solid blue; */
+padding: 0 8px;
+width: 344px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+max-height: 485px;
+overflow: hidden;
+overflow-y: auto;
+position: sticky;
+top: 12px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.comenthandle{
+
+        display: flex;
+        gap: 2px;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        position: sticky;
+        top: 0;
+        background-color: #077bf7;
+}
+
+
+.comenthandle input{
+    padding: 2px;
+    width: 264px;
+    height: 31px;
+    border: 2px solid;
+    border-radius: 16px;
+    outline: none;
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+.comenthandle input:focus{
+    border-color: #077bf7; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    
+}
+.post{
+    padding: 1px; 
+    font-size: 10px; 
+    height:36px; 
+    border: 1px solid; 
+     border-radius: 8px;
+      width: 38px; 
+      cursor: pointer; 
+      background: black;
+     color: white;
+}
+
+.post:hover{
+    background: white;
+    color: black;
+}
+.post:disabled{
+    cursor: not-allowed;
+ 
+}
+.twobtn{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+.edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background-color: green;
+color: white;
+width: 150px;
+padding: 3px;
+height: 40px;
+font-size: 12px;
+border: 2px solid black;
+outline: none;
+cursor: pointer;
+}
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: white;
+    width: 150px;
+    padding: 3px;
+    height: 40px;
+    font-size: 12px;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+}
+.edit:hover ,
+.delete:hover{
+    background: wheat;
+    color: black;
+}
+.editicon{
+   margin-left: 1px;
+    background-color: transparent;
+}
+.deleteicon{
+    background-color: transparent;
+    margin-left: 1px;
+}
+.rightcenter{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+}
+.leftcenter{
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 909px )  {
+    .comenthandle input{
+       
+        width: 220px;
+    }
+    .right{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 778px )  {
+    .comenthandle input{
+       
+        width: 180px;
+    }
+   
+}
+@media screen and (max-width: 643px )  {
+    .comenthandle {
+       
+        width: 100%;
+    }
+    .comenthandle input {
+       
+        width: 67%;
+    }
+    .content{
+        /* max-height: 424px; */
+    }
+  
+    .wraper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .right{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+   
+}

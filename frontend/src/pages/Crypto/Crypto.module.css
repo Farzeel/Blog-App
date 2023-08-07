@@ -1,0 +1,57 @@
+.tablewraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 11px;
+    height: 100%;
+}
+.table{
+    width:80%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+.rowhead th{
+    color: black;
+}
+.tablebody{
+text-align: center;
+}
+.tablerow{
+border-bottom: 1px solid black;
+}
+.tablerow td{
+    padding: 13px;
+}
+.tablerow2{
+
+}
+.logo{
+display: flex;
+justify-content: center;
+}
+.logo img{
+width: 27px;
+}
+.articleloader{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    height: 68vh;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 640px) {
+    .tablewraper{
+        margin-top: 20px;
+    }
+    .rowhead th{
+        font-size: 14px;
+    }
+    .table{
+        height: 990px;
+        overflow: hidden;
+        overflow-y: auto;
+
+    }
+}

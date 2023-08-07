@@ -1,0 +1,18 @@
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+}
+.error h2{
+    font-weight: 400;
+    font-size: 24px;
+    color: red;
+}
+.error span{
+color: blue;
+}
+.link{
+    text-decoration: none;
+}

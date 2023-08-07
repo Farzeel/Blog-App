@@ -1,0 +1,16 @@
+.comentwraper{
+    padding: 3px;
+    box-shadow: rgba(243, 32, 32, 0.1) 0px 4px 12px;
+    margin-top: 3px;
+}
+.name{
+font-size: 12px;
+}
+.content{
+font-size: 12px;
+width: 248px;
+word-wrap: break-word;
+}
+.date{
+font-size: 10px;
+}

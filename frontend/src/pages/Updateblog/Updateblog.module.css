@@ -1,0 +1,126 @@
+.wraper{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  .blogtitle{
+  margin-top:5px ;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  }
+  .blogtitle label{
+  font-size: 12px;
+  }
+  .blogtitle input{
+      padding-left: 6px;
+      height: 30px;
+      width: 100%;
+      /* background-color:  rgb(255 237 213 ); */
+      color: black;
+      outline: none;
+      transition: border-color 0.5s ease, box-shadow 0.5s ease;
+      border: 2px solid;
+      border-radius: 7px;
+  }
+  .blogsummary{
+      margin-top:5px ;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+  }
+  
+  .blogsummary label{
+      font-size: 12px;
+  }
+  
+  .blogsummary textarea{
+      padding-left: 6px;
+      /* background-color:  rgb(255 237 213 ); */
+      width: 100%;
+      color: black;
+      outline: none;
+      transition: border-color 0.5s ease, box-shadow 0.5s ease;
+      border: 2px solid;
+      border-radius: 7px;
+  }
+  
+  
+  .blogcontent{
+      margin-top:5px ;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+  }
+  .blogcontent label{
+      font-size: 12px;
+  }
+  .borderquill{
+      border: 2px solid;
+      
+  }
+  
+  
+  
+  
+  .blogtitle input:focus,
+  .blogsummary textarea:focus
+  {
+      border-color: #077bf7; /* Change border color on focus */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  .blogphoto{
+      margin-top:5px ;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+  }
+  .blogphoto label{
+      font-size: 12px;
+  }
+  .blogphoto input{
+      padding: 2px;
+      cursor: pointer;
+  }
+  .straight{
+      display: flex;
+      align-items: center;
+  }
+  .blogbutton{
+      margin:10px ;
+      display: flex;
+      flex-direction: column;
+  }
+  .blogbutton button{
+  border: 2px solid  rgb(22 78 99);
+  padding: 2px;
+  font-size: small;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  width: 125px;
+  height: 33px;
+  }
+  
+  .blogbutton button:hover{
+      background-color: rgb(22 78 99);
+      color: white;
+  }
+  .blogbutton button:disabled{
+      cursor: not-allowed;
+  }
+  .imgs{
+      width: 19px;
+      border-radius: 75px;
+  }
+  .loader{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+    

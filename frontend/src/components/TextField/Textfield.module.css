@@ -1,0 +1,59 @@
+.textfiledWraper{
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+.inputLabel{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.inputLabel label{
+    position: absolute;
+    top: -8px;
+    left: 38px;
+    font-size: 10px;
+    color: black;
+}
+.inputLabel input{
+    outline: none;
+    border: 2px solid;
+    font-size: 10px;
+    padding: 6px;
+    width: 80%;
+    border-radius: 3px;
+    height: 20px;
+    transition: border-color 0.5s ease, box-shadow 0.5s ease;
+}
+.inputLabel input:focus{
+    border-color: #077bf7; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+   
+}
+
+.errorMessage{
+font-size: 7px;
+color: red;
+max-height: 1px;
+}
+.paragraph{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%
+}
+@media screen and (max-width: 850px )  {
+    .textfiledWraper{
+        width: 73%;
+        
+    }
+    .zoom {
+        transform: scale(1.5); 
+        transition: transform 0.3s ease-in-out; 
+       } 
+}
