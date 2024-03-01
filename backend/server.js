@@ -8,7 +8,10 @@ const cors = require('cors');
 const path =  require('path');
 
 
+
+
 const app = express();
+
 
 app.use(cors({
   origin: 'http://localhost:3000', 
@@ -22,11 +25,7 @@ dbConnect();
 // COKKIE MIDDLEWARE
 app.use(CookieParser());
 
-// CORS MIDDLEWARE
-app.use(cors({
-  origin: 'http://localhost:3000', 
-  credentials: true 
-}));
+
 
 // JSON MIDDLEWARE
 app.use(express.json({limit: '50mb'}));
