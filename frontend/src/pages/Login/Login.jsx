@@ -87,7 +87,7 @@ const Login = () => {
       onChange={handleChange}
       onBlur={handleBlur}
       error={touched.password && errors.password}
-      type="text"
+      type="password"
       errormessage={errors.password}
       onKeyUp={loginbyenter}
       />

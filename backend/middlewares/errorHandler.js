@@ -4,7 +4,7 @@ const errorHandler = (err, req, res, next) => {
     // Default error handler
     let status = 500;
     let data = {
-        message: 'Internal Server Error'
+        message: 'Internal Server Error please try agian later'
     };
     
     // VALIDATION ERROR

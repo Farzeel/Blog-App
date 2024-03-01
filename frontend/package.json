@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
+    "backend": "file:..",
     "browserslist": "^4.21.10",
     "dotenv": "^16.3.1",
     "formik": "^2.4.3",
@@ -38,7 +39,6 @@
     ]
   },
   "browserslist": {
-    
     "production": [
       ">0.2%",
       "not dead",

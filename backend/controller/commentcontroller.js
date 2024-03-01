@@ -22,6 +22,7 @@ const CommentController = {
            blog,
            author
          });
+         
          await comment.save();
       } 
       catch (error) {

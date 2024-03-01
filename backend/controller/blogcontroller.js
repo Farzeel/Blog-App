@@ -10,8 +10,9 @@ const blogController = {
     // CREATE CONTROLLER
     async create(req, res,next){
           const blogSchema = Joi.object({
-            title: Joi.string().required(),
-            content: Joi.string().required(),
+            title: Joi.string().min(5).required(),
+            summary: Joi.string().required(),
+            content: Joi.string().min(200).required(),
             author: Joi.string().regex(mongodbIdPattern).required(),
             photo: Joi.string().required(),
             
@@ -22,7 +23,7 @@ const blogController = {
           }
 
           // DESTRUCTURING BLOG OBJECT
-          const{title,content,author,photo} = req.body;
+          const{title,content,author,photo,summary} = req.body;
 
          // HANDLE IMAGE STORAGE AND NAMING VIA BUFFER
        const buffer =   Buffer.from(photo.replace(/^data:image\/(png|jpg|jpeg);base64,/, ''), 'base64');
@@ -45,10 +46,11 @@ const blogController = {
               title,
               content,
               author,
+              summary,
               photoPath: `${BACKEND_SERVER_PATH}/storage/${imageName}`,
               
           });
-          await newBlog.save()
+           await newBlog.save()
           
         } 
         catch (error) {
@@ -112,8 +114,9 @@ const blogController = {
 
       // Validate blog
       const updateBlogSchema = Joi.object({
-        title: Joi.string().required(),
-        content: Joi.string().required(),
+        title: Joi.string().min(5).required(),
+        content: Joi.string().min(200).required(),
+        summary: Joi.string().required(),
         author: Joi.string().regex(mongodbIdPattern),
         blogId: Joi.string().regex(mongodbIdPattern).required(),
         photo: Joi.string(),
@@ -123,7 +126,7 @@ const blogController = {
           return next(error) 
       }
 
-      const {title,content,author,blogId,photo} = req.body;
+      const {title,content,author,blogId,photo,summary} = req.body;
 
      let blog;
      try {
@@ -153,6 +156,7 @@ const blogController = {
       // update database
       await Blog.updateOne({_id: blogId},{
         title,
+        summary,
         content,
         photoPath: `${BACKEND_SERVER_PATH}/storage/${imageName}`,
       })
@@ -161,6 +165,7 @@ const blogController = {
       await Blog.updateOne({_id: blogId},{
         title,
         content,
+        summary,
       })
      }
     //  send response

@@ -97,7 +97,7 @@ const authController = {
            res.status(201).json({
                message: "User created successfully",
                user: userDto,
-               auth:true
+               auth:false
            })
        }
        catch (error) {

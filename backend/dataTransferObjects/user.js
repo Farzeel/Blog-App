@@ -1,7 +1,7 @@
 class userDTO{
     constructor(user){
-        this.user_id = user._id;
-        this.name=user.username;
+        this._id = user._id;
+        this.username=user.username;
         this.email=user.email;     
     }
 }
