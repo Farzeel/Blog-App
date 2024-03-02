@@ -8,7 +8,7 @@ const auth = require("../middlewares/auth")
 
 
 //USER endpoints
-
+router.get("/",authController.info)
 //register
 router.post('/register', authController.register)
 

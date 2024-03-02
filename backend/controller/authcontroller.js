@@ -260,6 +260,9 @@ const authController = {
         const user =await User.findOne({_id: id});
         const userDto = new userDTO(user);
         return res.status(200).json({user:userDto,auth:true});
+     },
+     info(req,res){
+        res.send(`<h1>Welcome to backend of crypto blog</h1>`)
      }
 }
 module.exports = authController;
