@@ -2,7 +2,7 @@ const cron  = require("cron")
 const https  = require("https")
 
 
-const URL = "https://graphql-crash-course.onrender.com";
+const URL = "https://blog-app-4ff7.onrender.com/";
 
 const job = new cron.CronJob("*/14 * * * *", function () {
 	https

@@ -6,12 +6,12 @@ const errorHandler = require("./middlewares/errorHandler")
 const CookieParser = require('cookie-parser');
 const cors = require('cors');
 const path =  require('path');
-
+const job =  require('./corn.js');
 
 
 
 const app = express();
-
+job.start()
 
 app.use(cors({
   origin: 'http://localhost:3000', 
